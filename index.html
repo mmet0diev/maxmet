@@ -1,11 +1,30 @@
-<!-- <!DOCTYPE html> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Max Lab</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
 </head>
 <body>
+    <div class="terminal" id="terminal">
+    <div class="dots">
+        <div class="red"></div>
+        <div class="yellow"></div>
+        <div class="green"></div>
+    </div>
+    <pre id="term-output"></pre>
+    <div id="term-line">
+        <span class="prompt">max@lab:~$</span>
+        <span id="term-input"></span><span id="cursor">█</span>
+    </div>
+
+    <!-- Hidden input to capture real key events -->
+    <input type="text" id="hidden-input" autocomplete="off" autocorrect="off" 
+           autocapitalize="off" spellcheck="false">
+</div>
+
+
 </body>
 </html>
