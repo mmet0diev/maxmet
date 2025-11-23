@@ -115,6 +115,10 @@ function runCommand(rawCmd) {
             appendOutput("Description updated")
             break;
 
+        case "whoami":
+            appendOutput(currentUser)
+        break;
+
         default:
             appendOutput(`Command not found: ${name}`);
     }
