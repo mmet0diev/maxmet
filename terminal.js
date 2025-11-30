@@ -13,7 +13,7 @@ let desc = "Python/JS dev with a Software Engineering Degree (BSc), crypto and L
 
 // helpers for prompt
 function getPrompt() {
-    return `${currentUser}@lab:~$`;
+    return `${currentUser}@terminal:~$`;
 }
 
 function getDesc(){
@@ -117,7 +117,12 @@ function runCommand(rawCmd) {
 
         case "whoami":
             appendOutput(currentUser)
-        break;
+            break;
+
+        case "echo":
+            let arg = args.join(" ").trim()
+            appendOutput(arg)
+            break;
 
         default:
             appendOutput(`Command not found: ${name}`);

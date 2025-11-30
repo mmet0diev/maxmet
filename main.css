@@ -1,0 +1,15 @@
+body{
+    text-align: center;
+}
+
+body div{
+    text-align: center;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar h2{
+    margin-right: 0.8rem;
+}

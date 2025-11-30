@@ -1,0 +1,78 @@
+#terminal {
+    background: #0f172a;
+    border: 1px solid #1e293b;
+    padding: 20px;
+    border-radius: 12px;
+    font-family: "Fira Code", monospace;
+    font-size: 0.95rem;
+    color: #e5e7eb;
+    max-width: 800px;
+    margin: 40px auto;
+    position: relative;
+}
+
+#terminal pre {
+    margin: 0 0 10px 0;
+    white-space: pre-wrap;
+}
+
+#terminal input {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    height: 0;
+    width: 0;
+}
+
+#term-line {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.prompt {
+    color: #38bdf8;
+}
+
+#cursor {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    50% {
+        opacity: 1;
+    }
+
+    50.1%,
+    100% {
+        opacity: 0;
+    }
+}
+
+.dots {
+    position: absolute;
+    top: 8px;
+    left: 14px;
+    display: flex;
+    gap: 6px;
+}
+
+.dots div {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.red {
+    background: #ef4444;
+}
+
+.yellow {
+    background: #facc15;
+}
+
+.green {
+    background: #22c55e;
+}

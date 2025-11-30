@@ -4,13 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Max Lab</title>
+    <title>Home</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="terminal.css">
+    <!-- <link rel="stylesheet" href="css2.css"> -->
     <script src="main.js" defer></script>
+    <script src="terminal.js" defer></script>
 </head>
 
 <body>
-    
+    <div class="navbar">
+        <h2><a href="index.html">Home</a></h2>
+        <h2><a href="page1.html">Page 1</a></h2>
+        <h2><a href="page2.html">Page 2</a></h2>
+    </div>
+
+    <div class="introduction">
+        <section>
+            <p>Hi all my name is Max(imilian) and welcome to my personal website.</p>
+            <p>I am a programmer who loves linux/crypto and gaming</p>
+            <p>My hobbies include solving coding problems using primarily python and javascript.</p>
+            <p>I am also a passionate Linux user and love using the terminal and shell scripting to automate stuff!</p>
+        </section>
+        <section>
+            <p>Feel free to use the below pseudo terminal:</p>
+            <div class="terminal" id="terminal">
+            <div class="dots">
+            <div class="red"></div>
+            <div class="yellow"></div>
+            <div class="green"></div>
+        </div>
+        <pre id="term-output"></pre>
+        <div id="term-line">
+            <span class="prompt">max@terminal:~$</span>
+            <span id="term-input"></span><span id="cursor">█</span>
+        </div>
+
+        <!-- Hidden input to capture real key events -->
+        <input type="text" id="hidden-input" autocomplete="off" autocorrect="off" autocapitalize="off"
+            spellcheck="false">
+    </div>
+        </section>
+
+        
+    </div>
 </body>
 
 </html>
