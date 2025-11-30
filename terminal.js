@@ -89,10 +89,10 @@ function runCommand(rawCmd) {
 
         case "projects":
             appendOutput(
-                "- crypto-visualizer\n" +
-                "- gem dust calculator\n" +
+                "- Game accounts price calculator\n" +
                 "- netcat webserver\n" +
-                "- html generator\n"
+                "- yu-gi-oh website\n" +
+                "- Mouse/Keyboard automation software\n"
             );
             break;
 
