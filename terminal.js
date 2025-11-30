@@ -76,7 +76,8 @@ function runCommand(rawCmd) {
                 "projects       - list my work\n" +
                 "change <user>  - change user in prompt\n" +
                 "clear          - clear the terminal\n" +
-                "updatedesc          - update description to new provided description\n"
+                "updatedesc     - update description to new provided description\n" +
+                "echo           - print out the text after 'echo'"
             );
             break;
 

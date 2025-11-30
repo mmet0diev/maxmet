@@ -1,4 +1,5 @@
 #terminal {
+    text-align: left !important;
     background: #0f172a;
     border: 1px solid #1e293b;
     padding: 20px;
